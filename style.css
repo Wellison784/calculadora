@@ -1,0 +1,99 @@
+:root {
+    --primary: #4CAF50;
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f8fafc;
+    --accent: #fbbf24;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 { text-align: center; color: var(--primary); margin-bottom: 10px; }
+
+.instrucao {
+    font-size: 0.85em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #94a3b8;
+}
+
+.input-group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 5px; font-size: 0.9em; color: #94a3b8; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-calc { background: var(--primary); }
+.btn-calc:hover { background: #45a049; }
+
+.btn-clear { background: #64748b; }
+.btn-clear:hover { background: #475569; }
+
+#resultado-container {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #334155;
+    display: none;
+}
+
+.memorial-titulo {
+    color: var(--primary);
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #475569;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.conta-armada {
+    font-family: 'Courier New', monospace;
+    line-height: 1.8;
+    font-size: 0.9em;
+    color: var(--accent);
+}
+
+.final-destaque {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 1.25em;
+    text-align: center;
+    border-top: 1px dashed #475569;
+}

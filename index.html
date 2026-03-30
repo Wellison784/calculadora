@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Investimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Calculadora de Investimento</h2>
+    <p class="instrucao">Deixe vazio o campo que deseja descobrir</p>
+
+    <div class="input-group">
+        <label>Valor Futuro (FV)</label>
+        <input type="number" id="fv" placeholder="Ex: 16334.00">
+    </div>
+
+    <div class="input-group">
+        <label>Aporte Mensal (P)</label>
+        <input type="number" id="p" placeholder="Ex: 200">
+    </div>
+
+    <div class="input-group">
+        <label>Taxa Mensal (i) - ex: 0.01</label>
+        <input type="number" id="i" step="0.0001" placeholder="Ex: 1">
+    </div>
+
+    <div class="input-group">
+        <label>Número de Meses (n)</label>
+        <input type="number" id="n" placeholder="Ex: 60">
+    </div>
+
+    <button onclick="calcular()" class="btn-calc">Calcular e Montar Conta</button>
+    <button onclick="limparCampos()" class="btn-clear">Limpar Tudo</button>
+
+    <div id="resultado-container">
+        <span class="memorial-titulo">Memorial de Cálculo:</span>
+        <div id="memorial" class="conta-armada"></div>
+        <div id="final" class="final-destaque"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
